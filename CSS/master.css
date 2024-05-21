@@ -91,7 +91,41 @@
       --h1-font-size2: 1.5rem;
     }
   }
-  
+  /* color changes in some parts of the website , in light theme  */
+.dark-theme .bg-header,
+.dark-theme .nav__menu,
+.dark-theme .scrollup {
+  box-shadow: 0 2px 8px hsla(19, 64%, 4%, .5);
+}
+
+.dark-theme::-webkit-scrollbar {
+  background-color: hsl(19, 8%, 15%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  background-color: hsl(19, 8%, 25%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(19, 8%, 35%);
+}
+:root .bg-header,
+:root .nav__menu,
+:root .scrollup {
+  box-shadow: 0 2px 8px hsla(19, 64%, 4%, .5);
+}
+
+:root::-webkit-scrollbar {
+  background-color: hsl(19, 8%, 15%);
+}
+
+:root::-webkit-scrollbar-thumb {
+  background-color: hsl(19, 8%, 25%);
+}
+
+:root::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(19, 8%, 35%);
+}
 /*=============== BASE ===============*/
 * {
     box-sizing: border-box;
@@ -487,10 +521,10 @@ color: var(--first-color);
   margin: 0 auto;
   transition: all .2s linear;
 }
-.choose__img:hover{
+/* .choose__img:hover{
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
-}
+} */
 
 .choose__blob-title {
   font-size: 3.5rem;
@@ -844,6 +878,64 @@ color: var(--first-color);
   text-align: center;
   font-size: var(--small-font-size);
 }
+
+
+
+
+
+/*=============== VIDEO ===============*/
+.video__container {
+  padding-bottom: 1rem;
+}
+
+.video__description {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.video__content {
+  position: relative;
+}
+
+.video__button {
+  background: var(--first-color);
+  position: absolute;
+  right: 1rem;
+  bottom: -1rem;
+  padding: 1rem 1.5rem;
+}
+
+.video__button-icon {
+  font-size: 1.2rem;
+}
+
+.scrollup{
+  color: #000;
+  border-radius: 50px;
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--first-color);
+  padding: .5rem;
+  display: flex;
+  opacity: .9;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+}
+.scrollup__icon{
+  color: var(--white-color);
+}
+.scrollup:hover{
+  background-color: var(--first-color);
+  opacity: 1;
+}
+
+/* show scroll */
+.show-scroll{
+  bottom: 5rem;
+}
+
+
 /* ============================= BREAKPOINTS ================== */
 /* for smal devices */
 @media screen and (max-width:300px){
