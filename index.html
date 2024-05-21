@@ -10,6 +10,8 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
       <!--=============== REMIXICONS ===============-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
           <!--=============== BOXICONS ===============-->
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
           <link
@@ -64,7 +66,7 @@
       <!--==================== MAIN ====================-->
       <main class="main">
          <!--==================== HOME ====================-->
-         <section class="home section" id="home">
+         <section class="home section" id="home" data-aos="fade-left">
             <div class="home__container container grid">
                 <img src="IMAGE/8-Photoroom.png-Photoroom.png" alt="" class="home__img">
                 <div class="home__data">
@@ -83,7 +85,15 @@
                   <!--==================== about ====================-->
          <section class="features section" id="about" data-aos="fade-right">
             <div class="choose__container container grid">
-                        <img src="IMAGE/10.jpg" alt="" class="choose__img">                 
+                <div class="video__content">
+                    <video id="video-file" class="choose__img" muted autoplay loop>
+                        <source src="VIDEOS/v3.mp4" type="video/mp4">
+                    </video>
+      
+                    <button class="button button--flex video__button" id="video-button">
+                        <i class="fa-solid fa-play video__button-icon" id="video-icon"></i>
+                    </button>
+                </div>                 
                 <div class="choose__contect">
                     <div class="choose__data">
                     <h2 class="section__title">
@@ -96,7 +106,7 @@
             </div>
         </section>
          <!--==================== package ====================-->
-         <section class="pricing section" id="pricing" data-aos="fade-right">
+         <section class="pricing section" id="pricing" data-aos="fade-left">
             <div class="container">
                 <div class="section__data">
                     <div class="section__title">
@@ -110,19 +120,22 @@
                                 <img src="IMAGE/pricing1.png" alt="" class="pricing__img">
                             </div>
                             <h1 class="pricing__title bronze-h3">Bronze</h1>
-                            <h2 class="pricing__number">EGP1200 / 6Month</h2>
+                            <h2 class="pricing__number">EGP1500 / 1Month</h2>
                         </header>
                         <ul class="pricing__list">
                             <li class="pricing__item">
-                                <i class="fa-regular fa-circle-check"></i>Nutrition Plan based on your goal & BMR
+                                <i class="fa-regular fa-circle-check"></i>A weekly changing diet plan featuring your favorite foods
                             </li>
                             <li class="pricing__item">
-                                <i class="fa-regular fa-circle-check"></i>Gym/Home Programs
+                                <i class="fa-regular fa-circle-check"></i>A training program from home or the gym, explained with videos
                             </li>
                             <li class="pricing__item">
-                                <i class="fa-regular fa-circle-check"></i>Every Three days follow up 
+                                <i class="fa-regular fa-circle-check"></i>Direct communication and follow-up on WhatsApp
                             </li>
-                            <li class="pricing__item ">
+                            <li class="pricing__item pricing__item-opacity">
+                                <i class="fa-regular fa-circle-check"></i>A system to maintain your level and preserve the results at the end of the subscription
+                            </li>
+                            <!-- <li class="pricing__item ">
                                 <i class="fa-regular fa-circle-check"></i>Check ins for two Times 
                             </li>
                             <li class="pricing__item">
@@ -130,7 +143,7 @@
                             </li>
                             <li class="pricing__item">
                                 <i class="fa-regular fa-circle-check"></i>Food Choice 
-                            </li>
+                            </li> -->
                         </ul>
                         <a href="second.html" class="button button__flex pricing__button">Get Start</a>
                     </article>
@@ -140,27 +153,22 @@
                                 <img src="IMAGE/pricing2.png" alt="" class="pricing__img">
                             </div>
                             <h1 class="pricing__title silver-3">Silver</h1>
-                            <h2 class="pricing__number">EGP1200 / 3Month</h2>
+                            <h2 class="pricing__number">EGP3000 / 3Month</h2>
                         </header>
                         <ul class="pricing__list">
                             <li class="pricing__item">
-                                <i class="fa-regular fa-circle-check"></i>Nutrition Plan based on your goal & BMR
+                                <i class="fa-regular fa-circle-check"></i>A weekly changing diet plan featuring your favorite foods
                             </li>
                             <li class="pricing__item">
-                                <i class="fa-regular fa-circle-check"></i>Gym/Home Programs
+                                <i class="fa-regular fa-circle-check"></i>A training program from home or the gym, explained with videos
                             </li>
                             <li class="pricing__item">
-                                <i class="fa-regular fa-circle-check"></i>Every Three days follow up 
-                            </li>
-                            <li class="pricing__item ">
-                                <i class="fa-regular fa-circle-check"></i>Check ins for two Times 
+                                <i class="fa-regular fa-circle-check"></i>Direct communication and follow-up on WhatsApp
                             </li>
                             <li class="pricing__item">
-                                <i class="fa-regular fa-circle-check"></i>Q & A Via Whatsapp any time
+                                <i class="fa-regular fa-circle-check"></i>A system to maintain your level and preserve the results at the end of the subscription
                             </li>
-                            <li class="pricing__item">
-                                <i class="fa-regular fa-circle-check"></i>Food Choice 
-                            </li>
+                            
                         </ul>
                         <a href="second.html" class="button button__flex pricing__button">Get Start</a>
                     </article>
@@ -170,26 +178,20 @@
                                 <img src="IMAGE/pricing3.png" alt="" class="pricing__img">
                             </div>
                             <h1 class="pricing__title gold-h3">Gold</h1>
-                            <h2 class="pricing__number">EGP1200 / 1Month</h2>
+                            <h2 class="pricing__number">EGP5000 / 6Month</h2>
                         </header>
                         <ul class="pricing__list">
                             <li class="pricing__item">
-                                <i class="fa-regular fa-circle-check"></i>Nutrition Plan based on your goal & BMR
+                                <i class="fa-regular fa-circle-check"></i>A weekly changing diet plan featuring your favorite foods
                             </li>
                             <li class="pricing__item">
-                                <i class="fa-regular fa-circle-check"></i>Gym/Home Programs
+                                <i class="fa-regular fa-circle-check"></i>A training program from home or the gym, explained with videos
                             </li>
                             <li class="pricing__item">
-                                <i class="fa-regular fa-circle-check"></i>Every Three days follow up 
-                            </li>
-                            <li class="pricing__item ">
-                                <i class="fa-regular fa-circle-check"></i>Check ins for two Times 
+                                <i class="fa-regular fa-circle-check"></i>Direct communication and follow-up on WhatsApp
                             </li>
                             <li class="pricing__item">
-                                <i class="fa-regular fa-circle-check"></i>Q & A Via Whatsapp any time
-                            </li>
-                            <li class="pricing__item">
-                                <i class="fa-regular fa-circle-check"></i>Food Choice 
+                                <i class="fa-regular fa-circle-check"></i>A system to maintain your level and preserve the results at the end of the subscription
                             </li>
                         </ul>
                         <a href="second.html" class="button button__flex pricing__button">Get Start</a>
@@ -202,7 +204,7 @@
 
         
          <!--==================== care ====================-->
-         <section class="care section" id="care">
+         <section class="care section" id="care" data-aos="fade-right">
             <h2 class="section__title">Never Stress About <br>
                 Nutrition Again</h2>
         
@@ -241,7 +243,7 @@
         
         </section>
          <!--==================== banner ====================-->
-         <section class="banner section" id="routine">
+         <section class="banner section" id="routine" data-aos="fade-left">
             <div class="banner__container">
                 <ul class="banner__list">
                     <li class="banner__item">
@@ -256,7 +258,7 @@
             </div>
          </section>
           <!--==================== accordion ====================-->
-         <section class="accordion container" id="accordion">
+         <section class="accordion container" id="accordion" data-aos="fade-right">
             <h2 class="section__title">Have Any Questions?</h2>
         
             <div class="accordion__container">
@@ -311,9 +313,9 @@
         </section>
 
          <!--==================== testimonial ====================-->
-         <section class="testimonial section" id="testimonial">
+         <section class="testimonial section" id="testimonial" data-aos="fade-left">
             <h2 class="section__title">
-                Customer Options
+                Testimonial
             </h2>
             <div class="testimonial__container container">
                 <div class="testimonial__swiper swiper">
@@ -389,8 +391,8 @@
         
       </main>
  <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer__container container grid">
+        <footer class="footer" data-aos="fade-right">
+            <div class="footer__container container grid" >
             <div>
                 <a href="#" class="footer__logo">
                     <i class="ri-supabase-fill"></i> FAHD
@@ -458,14 +460,20 @@
             &#169; All Rights Reserved By <a class="mo" href="#">Mo Alramaly</a>
             </span>
         </footer>
-     
-
       <!--========== SCROLL UP ==========-->
-      
-
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="fa-solid fa-circle-arrow-up scrollup__icon"></i>
+        </a>
       <!--=============== SCROLLREVEAL ===============-->
       
-
+<!--=============== SWIPER JS ===============-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:200,
+    duration: 1500
+  });
+</script>
       <!--=============== MAIN JS ===============-->
       <script src="JS/swiper-bundle.min.js"></script>
       <script src="JS/main.js"></script>
