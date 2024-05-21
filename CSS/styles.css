@@ -489,8 +489,8 @@ img {
 }
 
 .input__radio:checked {
-  border-color: gold;
-  background: gold;
+  border-color: #c20004;
+  background: #c20004;
 }
 
 .input__radio-lable {
@@ -1720,7 +1720,7 @@ a:active {
 
 .block-form-part2 .input__radio:checked {
   /* border-color: rgb(175, 93, 195); */
-  background: gold;
+  background: #c20004;
 }
 .block-form-part2 .border-animation {
   height: 110rem;
